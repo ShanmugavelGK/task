@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_4sdp">
+
+    <com.gkshanmugavel.mobile.utils.CircleImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_margin="@dimen/_8sdp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:drawableLeft="@drawable/ic_clock"
+        android:drawablePadding="@dimen/_6sdp"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_address_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_color_medium"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_comment_count_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:drawableLeft="@drawable/ic_chat"
+        android:drawablePadding="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="13 Comments"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_left" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_large_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_address_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="no Address"
+        android:textColor="@color/text_color_medium"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/tv_comment_count_bottom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_large_image" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_comment_count_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:drawableLeft="@drawable/ic_chat"
+        android:drawablePadding="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="13"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_large_image" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/md_grey_300"
+        android:paddingTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
